@@ -9,7 +9,7 @@
 <body>
   <div class="container">
     <h1>회원 가입을 환영합니다.</h1>
-    <form>
+    <form onsubmit="check_sign(event)">
       <fieldset>
         <legend>사용자정보</legend>
         <ul>
@@ -70,5 +70,13 @@
       </div>
     </form>
   </div>
+<script>
+  function check_sign(event){
+    event.preventDefault();
+    console.log("가입하기 단추 눌림")
+    let userId = document.querySelector("#uid");
+    console.log("uid = " , userId.value);
+  }
+</script>  
 </body>
 </html>
