@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/sign_in.css">
   <title>Document</title>
 </head>
 <body>
@@ -43,7 +44,7 @@
             <label for="memo">메모</label>
             <textarea id="memo" 
               placeholder="남길 말씀을 적어주세요"
-              cols="40" rows="4"></textarea>
+              cols="40" rows="4"></textarea>          
           </li>
         </ul>
       </fieldset>
@@ -54,6 +55,19 @@
         <input type="radio" name="mail" id="mail_n" value="no">
         <label for="mail_n">메일 수신 안 함</label>
       </fieldset>
+      <fieldset>
+        <legend>이동수단</legend>
+        <input type="checkbox" id="bus">
+        <label for="bus">버스</label>
+        <input type="checkbox" id="metro">
+        <label for="metro">지하철</label>
+        <input type="checkbox" id="walking" checked>
+        <label for="walking">도보</label>
+      </fieldset>
+      <div class="buttons">
+        <input type="submit" value="가입하기">
+        <input type="reset" value="취소">
+      </div>
     </form>
   </div>
 </body>
