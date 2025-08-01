@@ -75,7 +75,15 @@
     event.preventDefault();
     console.log("가입하기 단추 눌림")
     let userId = document.querySelector("#uid");
-    console.log("uid = " , userId.value);
+    
+    // 아이디글자 수 확인(4자~10자) 사이
+    let idLength = userId.value.length;
+    if(idLength < 4 || idLength > 10){
+      alert("아이디는 4자~10자 사이입니다.");
+      userId.value = '';
+      userId.focus();
+      return;
+    }
   }
 </script>  
 </body>
