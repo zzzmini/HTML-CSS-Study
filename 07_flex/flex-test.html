@@ -7,7 +7,13 @@
   <style>
     .container {
       background-color: powderblue;
-      height: 200px;
+      height: 500px;
+      display: flex; /* flex 기본방향은 row */
+      flex-direction: column;
+      /* 주축정렬 - row인경우 -> x축 */
+      justify-content: center;
+      /* 교차축정렬 - row인경우 -> y축 */
+      align-items: center;
     }
     .item {
       background-color: tomato;
@@ -15,6 +21,8 @@
       border: 1px solid white;
       width: 50px;
       height: 50px;
+      text-align: center;
+      align-content: center;
     }
   </style>
 </head>

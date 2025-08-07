@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+    header{
+      border-bottom: 1px solid gray;
+      padding-left: 20px;
+    }
+    footer {
+      border-top: 1px solid gray;
+      padding: 20px;
+      text-align: center;
+    }
+    .content {
+      display: flex;
+    }
+
+    .content nav {
+      flex-basis: 150px;
+      flex-shrink: 0;
+      border-right: 1px solid gray;
+    }
+
+    .content aside {
+      flex-basis: 150px;
+      flex-shrink: 0;
+      border-left: 1px solid gray;
+    }
+    main {
+      padding: 10px;
+      column-count: 4;
+      text-align: justify;
+      column-width: 200px;
+      column-gap: 30px;
+      column-rule-style: solid;
+      column-rule-width: 1px;
+      column-rule-color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Holy Grail Layout</h1>
+    </header>
+    <section class="content">
+      <nav>
+        <ul>
+          <li>main</li>
+          <li>about</li>
+          <li>help</li>
+        </ul>
+      </nav>
+      <main>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod laboriosam eligendi labore aperiam sunt beatae, distinctio repudiandae, cum repellendus, excepturi earum ab delectus. Reprehenderit voluptas earum in, exercitationem ut itaque?
+        Quibusdam culpa delectus ullam dicta sapiente ipsum nulla similique adipisci assumenda nisi? Asperiores ab sunt suscipit, repellat cumque accusamus eos magni neque numquam atque at quo distinctio sint non in?
+        Aliquam, omnis mollitia! Id laudantium pariatur odio reiciendis quasi quo illum ut, dignissimos earum aliquam nam cupiditate adipisci itaque. Eum repudiandae a quaerat blanditiis perspiciatis? Quam nisi officiis sunt incidunt.
+        Autem atque fugit mollitia voluptate nesciunt! Ipsum, aperiam molestias? Ad, dolorem distinctio sint cupiditate labore inventore nemo asperiores magnam repellat error, incidunt odit ea, quo quasi eaque. Odio, doloribus quia?
+        Ducimus quis tempore cumque accusamus fugit voluptate magnam veniam dolorem, obcaecati eligendi facilis facere illo molestias consectetur quibusdam nihil dolor deleniti saepe ipsam. Molestias eius, nostrum omnis neque pariatur nihil.
+        Maiores, delectus laudantium excepturi nostrum iste blanditiis ex sit, dolor sequi nemo aliquid numquam ducimus debitis nobis ea perspiciatis reprehenderit fugiat quidem placeat. Odio, ipsa. Nihil excepturi expedita illo labore?
+        Consequatur quia ratione amet, ab suscipit, totam quo id explicabo iure saepe fugit, dolore dolor? Rerum vitae architecto natus odit ratione voluptas rem, saepe commodi, dolorem quas repudiandae, obcaecati doloremque.
+        A libero exercitationem provident culpa eaque praesentium blanditiis distinctio assumenda maxime, nihil dolor sunt quidem aspernatur tempora cupiditate reprehenderit? Expedita cum nulla repellendus et maiores. Mollitia totam molestiae veritatis tempore.
+        Quaerat cum nobis, eligendi neque culpa facere eaque odio delectus maiores, ipsum fuga magnam iste quod est distinctio aspernatur! Est quidem esse, tempora explicabo totam officiis nostrum placeat doloribus a.
+        Libero odit, eius voluptates perferendis dolorem sed deleniti voluptatibus repellendus tempora! In dolorem aspernatur cupiditate corrupti sit cumque inventore aut est! Impedit mollitia rem, ipsum dolorum quibusdam expedita obcaecati omnis?
+      </main>
+      <aside>
+        AD(광고영역)
+      </aside>
+    </section>
+    <footer>
+      <a href="#">홈페이지</a>
+    </footer>
+  </div>
+</body>
+</html>

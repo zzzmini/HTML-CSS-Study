@@ -116,3 +116,34 @@ div, input, textarea {
   background-color: bisque;
   border: 1px solid #ddd;
 }
+
+.nav-container {
+  display: flex;
+  height: 50px;
+  padding: 10px;
+  align-items: center;
+}
+.nav-item{
+  margin-right: 10px;
+}
+
+/* 현재 브라우저의 폭이 1200px 이하가 될때 적용할 CSS */
+@media screen and (max-width: 1200px){
+  .main-title {
+    font-size: 30px;
+  }
+}
+
+/* 폭이 768px 이하 일 때 */
+@media screen and (max-width: 768px){
+  .main-title {
+    font-size: 20px;
+  }
+}
+
+/* 폭이 768px 이하 일 때 */
+@media screen and (max-width: 576px){
+  .main-title {
+    font-size: 10px;
+  }
+}
